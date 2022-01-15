@@ -60,8 +60,8 @@ for i = 1 : length(A1)
         Y1 = L1*sind(Theta_1);
         
         % FInal points of Link 2
-        X2 = X1 + L2*cosd(Theta_2);
-        Y2 = Y1 + L2*sind(Theta_2);
+        X2 = X1 + L2*cosd(Theta_1 + Theta_2);
+        Y2 = Y1 + L2*sind(Theta_1 + Theta_2);
 
         % Assigning the Parameters
         txt1 = ['T1 = ', num2str(Theta_1), ' Deg'];
