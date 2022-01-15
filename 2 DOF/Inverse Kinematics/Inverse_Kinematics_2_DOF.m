@@ -19,7 +19,7 @@ R = sqrt((Final_y*Final_y) + (Final_x*Final_x));
 Theta = atan(Final_y/(Final_x + 0.00001));
 
 % Intermediate Angles
-Beta = acos(((R*R)-(L1*L1)-(L2*L2))/(2*L1*L2));
+Beta = acos(((R*R)-(L1*L1)-(L2*L2))/((-1)*2*L1*L2));
 Alpha = asin((L2*sin(Beta))/R);
 
 % Final Joint Angles in Radians
