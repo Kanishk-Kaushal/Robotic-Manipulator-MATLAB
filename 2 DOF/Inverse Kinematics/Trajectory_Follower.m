@@ -1,5 +1,5 @@
-% Program for Inverse Kinematics on a 2 DOF Robotic Manipulator that
-% follows a Specified Trajectory
+% Program for Inverse Kinematics on a 2 DOF Robotic Manipulator that follows a Specified Trajectory
+
 
 % Inputs -> Start
 
