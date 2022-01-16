@@ -3,12 +3,12 @@
 % Input Start 
 
 % Link Lengths
-L1 = 1;
-L2 = 1;
+L1 = 5;
+L2 = 5;
 
 % Final End Effector Position
-Final_x = 1;
-Final_y = 0.5;
+Final_x = 4;
+Final_y = 4;
 
 % Input End
 
@@ -169,7 +169,7 @@ for i = 1 : length(A1)
     text(0.5*(X1 + X2), 0.5*(Y1 + Y2), '  Link 2')
     grid on
 
-    axis([-3 3 -3 3])
+    axis([-10 10 -10 10])
 
     M(counter) = getframe(gcf);
     counter = counter + 1;
