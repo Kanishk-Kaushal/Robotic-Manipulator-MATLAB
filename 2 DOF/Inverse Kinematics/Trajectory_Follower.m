@@ -170,7 +170,7 @@ for i = 1 : length(Theta_Traj)
 
     xlabel('X-Axis (m)')
     ylabel('Y-Axis (m)')
-    title('Inverse Kinematics on a 2 DOF Robotic Manipulator');
+    title('Trajectory Follower 2 DOF Robotic Manipulator');
     text(X0, Y0, txt1, 'VerticalAlignment', 'top')
     text(X1, Y1, txt2, 'VerticalAlignment', 'top')
     text(X2, Y2, txtend, 'HorizontalAlignment', 'left', 'VerticalAlignment', 'bottom')
