@@ -1,8 +1,8 @@
-% Basic 3R Rigid Body Tree Robotic Manipulator
+% Basic 4 R Robotic Manipulator
 
 % Create Rigid Body Elements
-Basic_3R_arm = rigidBodyTree("DataFormat","column");
-base = Basic_3R_arm.Base;
+Basic_4R_arm = rigidBodyTree("DataFormat","column");
+base = Basic_4R_arm.Base;
 
 % Create a series of linkages as rigidBody objects. The robot consists of a 
 % rotating base, 2 rectangular arms, and a gripper.
@@ -60,8 +60,8 @@ joints = {[],jntBase,jnt1,jnt2,jntGripper};
 figure("Name","Assemble Robot","Visible","on")
 for i = 2:length(bodies) % Skip base. Iterate through adding bodies and joints.
             bodies{i}.Joint = joints{i};
-            addBody(Basic_3R_arm,bodies{i},bodies{i-1}.Name)
-            show(Basic_3R_arm,"Collisions","on","Frames","off");
+            addBody(Basic_4R_arm,bodies{i},bodies{i-1}.Name)
+            show(Basic_4R_arm,"Collisions","on","Frames","off");
             drawnow;
 end
 
@@ -69,7 +69,7 @@ end
 % figure("Name","Interactive GUI")
 % gui = interactiveRigidBodyTree(Basic_2R_arm,"MarkerScaleFactor",0.25);
 
-interactiveGUI = interactiveRigidBodyTree(Basic_3R_arm);
+interactiveGUI = interactiveRigidBodyTree(Basic_4R_arm);
 
 % Generate Random Joint Configurations
 % for i = 1:4
